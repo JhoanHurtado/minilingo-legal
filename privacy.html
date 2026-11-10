@@ -3,56 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad - MiniLingo</title>
+  <title>Política de Privacidad - Nuvri</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-    h1, h2 { color: #2c3e50; }
-    a { color: #3498db; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .date { color: #888; font-size: 0.9em; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: #334155;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 40px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #0f766e;
+      background-color: #f0fdfa;
+      border: 1px solid #ccfbf1;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      color: #0f172a;
+      font-size: 2rem;
+      margin: 0 0 8px 0;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      color: #0f172a;
+      font-size: 1.2rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    p, li {
+      font-size: 0.95rem;
+      color: #475569;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: #0f172a;
+    }
+    a {
+      color: #0f766e;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .date {
+      color: #64748b;
+      font-size: 0.875rem;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 24px; }
+      h1 { font-size: 1.6rem; }
+    }
   </style>
 </head>
 <body>
-  <h1>Política de Privacidad</h1>
-  <p class="date">Última actualización: abril de 2026</p>
+  <div class="container">
+    <span class="badge">Privacidad y Protección de Datos</span>
+    <h1>Política de Privacidad</h1>
+    <p class="date">Última actualización: mayo de 2026</p>
 
-  <p>En <strong>MiniLingo</strong> respetamos tu privacidad. Esta política explica qué información recopilamos, cómo la usamos y tus derechos al respecto.</p>
+    <p>En <strong>Nuvri</strong> respetamos tu privacidad y protegemos tus datos personales. Esta Política de Privacidad define con claridad qué información recopilamos, con qué finalidad la tratamos, qué servicios de terceros intervienen y cómo puedes ejercer tus derechos o eliminar tu cuenta de forma inmediata.</p>
 
-  <h2>1. Información que recopilamos</h2>
-  <ul>
-    <li><strong>Datos de cuenta:</strong> nombre, correo electrónico e imagen de perfil al registrarte con Google, Facebook, Apple o correo.</li>
-    <li><strong>Datos de uso:</strong> idiomas seleccionados, progreso de aprendizaje, resultados de juegos y estadísticas de sesión.</li>
-    <li><strong>Datos del dispositivo:</strong> identificador del dispositivo, sistema operativo y versión de la app, para notificaciones push y análisis de errores.</li>
-    <li><strong>Datos de publicidad:</strong> usamos Google AdMob para mostrar anuncios. AdMob puede recopilar datos para personalizar anuncios según las políticas de Google.</li>
-  </ul>
+    <h2>1. Definición de la Información que Recopilamos</h2>
+    <ul>
+      <li><strong>Datos de Cuenta y Perfil:</strong> Nombre, dirección de correo electrónico, foto de perfil opcional, idioma nativo, idioma de aprendizaje (Inglés, Español o Francés) y nivel MCER (A1–C2) al registrarte mediante correo o proveedores externos (Google Sign-In o Sign in with Apple).</li>
+      <li><strong>Datos de Aprendizaje y Diccionario Personal:</strong> Palabras registradas o importadas mediante CSV, traducciones, ejemplos, etapa de repetición espaciada (SRS 0–5), puntuaciones en los 8 modos de juego, rachas diarias e historial de sesiones.</li>
+      <li><strong>Datos Técnicos y de Notificaciones:</strong> Token de notificaciones push (FCM), zona horaria del dispositivo, horarios preferidos de recordatorio, sistema operativo, versión de la aplicación y registros técnicos de fallos (crash logs) para garantizar la estabilidad del servicio.</li>
+      <li><strong>Datos de Publicidad y Consentimiento:</strong> Identificadores publicitarios gestionados por Google AdMob para la entrega de anuncios recompensados opcionales, sujetos a tu consentimiento mediante Google UMP (GDPR) y el marco App Tracking Transparency (ATT) en iOS.</li>
+    </ul>
 
-  <h2>2. Cómo usamos tus datos</h2>
-  <ul>
-    <li>Proporcionar y mejorar el servicio de aprendizaje de idiomas.</li>
-    <li>Enviar notificaciones push sobre tu progreso (puedes desactivarlas en ajustes).</li>
-    <li>Analizar errores y rendimiento mediante Firebase Crashlytics y Analytics.</li>
-    <li>Mostrar anuncios a través de Google AdMob para financiar el servicio gratuito.</li>
-    <li>Mantener la seguridad de tu cuenta.</li>
-  </ul>
+    <h2>2. Finalidad del Tratamiento de tus Datos</h2>
+    <ul>
+      <li>Sincronizar tu Diccionario Personal, progreso SRS y estadísticas entre tus sesiones.</li>
+      <li>Adaptar la dificultad de los juegos y ejercicios generados por IA a tu nivel MCER (A1–C2) y a las palabras que estás aprendiendo.</li>
+      <li>Enviar recordatorios de vocabulario con pronunciación y notificaciones de racha en tu zona horaria (configurables o desactivables en cualquier momento desde la app).</li>
+      <li>Verificar tu identidad mediante códigos de seguridad (OTP por correo) para proteger operaciones sensibles como el cambio de contraseña o la eliminación de cuenta.</li>
+      <li>Diagnosticar errores técnicos y optimizar el rendimiento de la aplicación.</li>
+    </ul>
 
-  <h2>3. Servicios de terceros</h2>
-  <p>Utilizamos los siguientes servicios de terceros que tienen sus propias políticas de privacidad:</p>
-  <ul>
-    <li><a href="https://policies.google.com/privacy">Google (Firebase, AdMob, Sign-In)</a></li>
-    <li><a href="https://www.facebook.com/policy.php">Meta (Facebook Login)</a></li>
-    <li><a href="https://www.apple.com/legal/privacy/">Apple (Sign in with Apple)</a></li>
-  </ul>
+    <h2>3. Servicios de Terceros</h2>
+    <p>Nuvri se apoya en proveedores de infraestructura y servicios que procesan datos bajo estrictos estándares de seguridad y conforme a sus propias políticas de privacidad:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google (Firebase Authentication, Cloud Messaging, Analytics, Crashlytics, AdMob y Google Sign-In)</a></li>
+      <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple (Sign in with Apple y servicios de plataforma iOS)</a></li>
+      <li>Proveedores de almacenamiento seguro en la nube (para fotos de perfil y respaldos cifrados en tránsito mediante HTTPS/TLS) y motores de inteligencia artificial para la generación de ejercicios contextuales.</li>
+    </ul>
 
-  <h2>4. Publicidad</h2>
-  <p>MiniLingo muestra anuncios de video recompensados a través de Google AdMob. Puedes ver anuncios voluntariamente para desbloquear funciones adicionales. No mostramos anuncios a menores de 13 años.</p>
+    <h2>4. Publicidad Recompensada Opcional</h2>
+    <p>Nuvri muestra anuncios de video recompensados a través de Google AdMob únicamente cuando el Usuario decide verlos de forma voluntaria para desbloquear retos diarios adicionales o pistas extra. No comercializamos tus datos personales con terceros ni mostramos publicidad a menores de 13 años.</p>
 
-  <h2>5. Retención y eliminación de datos</h2>
-  <p>Puedes eliminar tu cuenta y todos tus datos en cualquier momento desde la sección de configuración de la app o visitando nuestra <a href="https://jhoanhurtado.github.io/minilingo-legal/delete.html">página de eliminación de datos</a>.</p>
+    <h2>5. Retención y Eliminación Inmediata de Datos</h2>
+    <p>Conservamos tus datos únicamente mientras mantengas una cuenta activa en Nuvri. Puedes eliminar tu cuenta y la totalidad de tus datos asociados de forma <strong>inmediata, irreversible y permanente</strong> directamente desde la aplicación (<em>Perfil → Eliminar cuenta</em>). Consulta el procedimiento detallado en nuestra <a href="./delete.html">página de eliminación de datos</a>.</p>
 
-  <h2>6. Tus derechos</h2>
-  <p>Tienes derecho a acceder, corregir o eliminar tus datos personales. Para ejercer estos derechos, contáctanos en <a href="mailto:support@minilingo.app">support@minilingo.app</a>.</p>
+    <h2>6. Derechos del Titular de los Datos</h2>
+    <p>Tienes derecho a acceder, rectificar, actualizar, exportar o solicitar la supresión de tus datos personales, así como a revocar el consentimiento de notificaciones o personalización de anuncios desde los ajustes de la aplicación o escribiéndonos a <a href="mailto:support@nuvri.app">support@nuvri.app</a>.</p>
 
-  <h2>7. Contacto</h2>
-  <p>Si tienes preguntas sobre esta política, escríbenos a <a href="mailto:support@minilingo.app">support@minilingo.app</a>.</p>
+    <h2>7. Contacto</h2>
+    <p>Si tienes preguntas sobre esta Política de Privacidad o el tratamiento de tus datos en Nuvri, contáctanos en <a href="mailto:support@nuvri.app">support@nuvri.app</a>.</p>
+  </div>
 </body>
 </html>
